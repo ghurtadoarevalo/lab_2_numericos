@@ -1,0 +1,6 @@
+function [error,sol] = leastSquares(A, b)
+    [n,m] = size(A);
+    sol = inv(A'*A)*A'*b;
+    error = norm(eye(A)-inv(inv(A_trans*A))*A_trans);
+
+end
